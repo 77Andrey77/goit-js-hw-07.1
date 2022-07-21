@@ -14,3 +14,15 @@ img{
   border: 10px solid rgb(176, 132, 132);
   box-sizing: border-box;
 }
+
+#validation-input {
+  border: 10px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
