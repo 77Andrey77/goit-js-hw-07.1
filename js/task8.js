@@ -13,7 +13,7 @@ function getAmount() {
   let amount = Number(refs.inputNumber.value);
   onCreateBoxes(amount);
 };
-
+const divEl = [];
 
 function onCreateBoxes(amount) {
   // console.log(amount);
@@ -26,9 +26,10 @@ function onCreateBoxes(amount) {
     divElemrnt.style.width = `${size}px`;
     divElemrnt.style.height=`${size}px`;
     divElemrnt.style.backgroundColor = `rgba(${random()},${random()},${random()})`;
-    boxes.append(divElemrnt);
+    // boxes.append(divElemrnt);
+    divEl.push(divElemrnt);
   }
-    
+  boxes.append(...divEl); 
   
 };
 
